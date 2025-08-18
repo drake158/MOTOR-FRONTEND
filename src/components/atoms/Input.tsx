@@ -1,3 +1,4 @@
+
 import { FC, ChangeEvent } from 'react';
 
 interface InputProps {
@@ -21,5 +22,6 @@ const Input: FC<InputProps> = ({ placeholder, value, defaultValue, onChange, cla
     />
   );
 };
+
 
 export default Input;
