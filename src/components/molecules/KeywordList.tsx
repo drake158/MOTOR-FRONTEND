@@ -1,6 +1,6 @@
 "use client";
 import { FC } from 'react';
-import Button from '@/components/atoms/Button';
+import { Button } from '@/components/atoms/button';
 import { InspirationType } from '@/lib/inspirationStrategies';
 
 interface KeywordListProps {

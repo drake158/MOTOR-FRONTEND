@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import ChipInput from "@/components/molecules/ChipInput";
 import KeywordList from "@/components/molecules/KeywordList";
-import Button from "@/components/atoms/Button";
+import { Button } from "@/components/atoms/button";
 import { InspirationType } from "@/lib/inspirationStrategies";
 
 type Props = {
@@ -69,11 +69,9 @@ return (
         className="w-full"    // ocupa el ancho fijo del contenedor padre
       />
       <Button
-        label="Buscar"
-        variant="category"
         onClick={handleSearch}
         className="whitespace-nowrap"
-      />
+      > Buscar </Button>
     </div>
 
     <KeywordList keywords={keywords} type={type} onAdd={addFromKeyword} />
